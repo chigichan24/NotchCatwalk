@@ -1,4 +1,4 @@
-# NotchCatwalk
+# 🐈NotchCatwalk🐈
 
 A cat patrols around your MacBook notch.
 
