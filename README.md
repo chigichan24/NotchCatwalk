@@ -20,13 +20,17 @@ A tiny macOS app that places a cat around your MacBook's notch. The cat walks ba
 Single file, no dependencies, no Xcode project needed:
 
 ```bash
-swiftc -parse-as-library -framework SwiftUI -framework Cocoa -framework AppKit -o NotchCatwalk NotchCatwalkApp.swift
-./NotchCatwalk
+./build.sh
+open NotchCatwalk.app
 ```
 
 Requires macOS 14.0+ and a MacBook with a notch.
 
-To quit: `Ctrl+C` in terminal or `pkill NotchCatwalk`.
+> **Note**: On first run, macOS will prompt for Accessibility permission
+> (System Settings > Privacy & Security > Accessibility). This is needed
+> for mouse tracking near the notch. Grant it to "NotchCatwalk".
+
+To quit: `pkill NotchCatwalk`.
 
 ## How it works
 
